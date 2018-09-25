@@ -1,0 +1,22 @@
+Configuracion de contraseñas
+
+enable
+conf t
+hostname *****
+line console 0 
+password ****
+login
+logging synchronous
+exit
+line vty 0 4 
+password ****
+login
+logging synchronous
+exit
+enable password ****
+service password-encryption
+
+enable secret ****
+exit
+
+show running-config
